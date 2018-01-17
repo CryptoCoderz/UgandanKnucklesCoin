@@ -168,8 +168,8 @@ Value checkkernel(const Array& params, bool fHelp)
     if (vNodes.empty())
         throw JSONRPCError(-9, "UgandanKnucklesCoin is not connected!");
 
-   // if (IsInitialBlockDownload())
-   //     throw JSONRPCError(-10, "UgandanKnucklesCoin is downloading blocks...");
+    if (IsInitialBlockDownload())
+        throw JSONRPCError(-10, "UgandanKnucklesCoin is downloading blocks...");
 
     if (pindexBest->nHeight >= Params().LastPoWBlock())
         throw JSONRPCError(RPC_MISC_ERROR, "No more PoW blocks");
@@ -252,8 +252,8 @@ Value getworkex(const Array& params, bool fHelp)
     if (vNodes.empty())
         throw JSONRPCError(-9, "UgandanKnucklesCoin is not connected!");
 
- //   if (IsInitialBlockDownload())
-//        throw JSONRPCError(-10, "UgandanKnucklesCoin is downloading blocks...");
+    if (IsInitialBlockDownload())
+        throw JSONRPCError(-10, "UgandanKnucklesCoin is downloading blocks...");
 
     if (pindexBest->nHeight >= Params().LastPoWBlock())
         throw JSONRPCError(RPC_MISC_ERROR, "No more PoW blocks");
@@ -386,8 +386,8 @@ Value getwork(const Array& params, bool fHelp)
     if (vNodes.empty())
         throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "UgandanKnucklesCoin is not connected!");
 
-  //  if (IsInitialBlockDownload())
-  //      throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "UgandanKnucklesCoin is downloading blocks...");
+    if (IsInitialBlockDownload())
+        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "UgandanKnucklesCoin is downloading blocks...");
 
     if (pindexBest->nHeight >= Params().LastPoWBlock())
         throw JSONRPCError(RPC_MISC_ERROR, "No more PoW blocks");
@@ -530,8 +530,8 @@ Value getblocktemplate(const Array& params, bool fHelp)
     if (vNodes.empty())
         throw JSONRPCError(RPC_CLIENT_NOT_CONNECTED, "UgandanKnucklesCoin is not connected!");
 
- //   if (IsInitialBlockDownload())
- //       throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "UgandanKnucklesCoin is downloading blocks...");
+    if (IsInitialBlockDownload())
+        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "UgandanKnucklesCoin is downloading blocks...");
 
     if (pindexBest->nHeight >= Params().LastPoWBlock())
         throw JSONRPCError(RPC_MISC_ERROR, "No more PoW blocks");

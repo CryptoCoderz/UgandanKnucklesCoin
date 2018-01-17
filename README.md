@@ -42,6 +42,6 @@ Confirmations (relayedTX): 7 blocks
 
 Confirmations (minedTX): 20 blocks
 
-rpcport: 70043
+rpcport: 7999
 
 port: 60081

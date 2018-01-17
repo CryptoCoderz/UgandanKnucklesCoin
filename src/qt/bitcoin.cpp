@@ -167,8 +167,8 @@ int main(int argc, char *argv[])
     ReadConfigFile(mapArgs, mapMultiArgs);
 
     // Add Daemon config settings - Also gets us connected for initial launch (before config file takes effect)
-    // mapMultiArgs["-addnode"].push_back("addnode=104.236.150.155:10024");
-
+    mapMultiArgs["-addnode"].push_back("addnode=188.166.109.87:60081");
+    mapMultiArgs["-addnode"].push_back("addnode=159.203.240.221:60081");
     // Application identification (must be set before OptionsModel is initialized,
     // as it is used to locate QSettings)
     app.setOrganizationName("UgandanKnucklesCoin");
