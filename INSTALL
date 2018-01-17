@@ -1,0 +1,9 @@
+Building UgandanKnucklesCoin
+
+See doc/readme-qt.rst for instructions on building UgandanKnucklesCoin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of UgandanKnucklesCoin.
+
+See doc/build-*.txt for instructions on building UgandanKnucklesCoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of UgandanKnucklesCoin.
