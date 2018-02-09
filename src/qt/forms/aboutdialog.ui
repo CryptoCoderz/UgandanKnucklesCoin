@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>About UgandanKnucklesCoin</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(204, 1, 80);
+background-color: rgb(16, 16, 16);</string>
+  </property>
   <layout class="QHBoxLayout" name="horizontalLayout_2">
    <item>
     <widget class="QLabel" name="label_4">

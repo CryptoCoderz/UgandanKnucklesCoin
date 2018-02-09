@@ -80,8 +80,9 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     prevBlocks(0),
     nWeight(0)
 {
-    resize(850+95, 550);
+    setFixedSize(850+95, 550);
     setWindowTitle(tr("UgandanKnucklesCoin") + " - " + tr("Wallet"));
+    qApp->setStyleSheet("QMainWindow { background-image:url(:images/ukcbkg); border:none; }");
 #ifndef Q_OS_MAC
     qApp->setWindowIcon(QIcon(":icons/bitcoin"));
     setWindowIcon(QIcon(":icons/bitcoin"));
@@ -358,6 +359,7 @@ void BitcoinGUI::createToolBars()
     toolbar = new QToolBar(tr("Tabs toolbar"));
     toolbar->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
     toolbar->setContextMenuPolicy(Qt::PreventContextMenu);
+    toolbar->setStyleSheet("QToolButton { color: rgb(204, 1, 80); font-weight:bold; } QToolButton:hover { background-color: #880c3c } QToolButton:checked { background-color: #721f77 } QToolButton:pressed { background-color: #505050 }");
 
     toolbar->addAction(overviewAction);
     toolbar->addAction(receiveCoinsAction);

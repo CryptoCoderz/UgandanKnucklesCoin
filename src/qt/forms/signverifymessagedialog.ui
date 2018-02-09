@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Signatures - Sign / Verify a Message</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(204, 1, 80);
+background-color: rgb(16, 16, 16);</string>
+  </property>
   <property name="modal">
    <bool>true</bool>
   </property>
